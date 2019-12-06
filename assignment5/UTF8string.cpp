@@ -8,6 +8,7 @@
  * constructor to build a new object
  */
 UTF8string::UTF8string(std::string str) : str(str) {}
+UTF8string::UTF8string(char* str) : str(str) {};
 
 
 /*
@@ -61,11 +62,11 @@ int UTF8string::find(std::string substr) {
 /*
  * replaces to_remove with replacement
  */
-void UTF8string::replace(std::string to_remove, std::string replacement) {
+void UTF8string::replace(UTF8string to_remove, UTF8string replacement) {
     int position = 0;
-    while((position = this->str.find(to_remove, position)) != std::string::npos) {
+    while((position = this->str.find(to_remove.str, position)) != std::string::npos) {
         int begin = position;
-        this->str.replace(begin, to_remove.length(), replacement);
+        this->str.replace(begin, to_remove.length(), replacement.str);
     }
 }
 

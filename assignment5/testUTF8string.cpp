@@ -24,7 +24,7 @@ int main() {
     // Testing operator *: hip hip hip hurray
     // Testing operator !: Никола́й Васи́льевич Го́голь -> ьлоѓоГ чивеьл́исаВ й́алокиН
     //
-    UTF8string test = UTF8string("Mais où sont les neiges d'antan?");
+    UTF8string test = UTF8string("Mais où sont les neiges d'antan?а́");
     UTF8string test2 = UTF8string("Всё хорошо́, что хорошо́ конча́ется");
     UTF8string test3("hip ");
     UTF8string test4("Никола́й Васи́льевич Го́голь");
